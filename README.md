@@ -1,3 +1,1 @@
-#ASPIRING DEVOPS
-
-Welcome here!
+YOU ARE JERK
