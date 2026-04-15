@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JC Constantino | Solutions Architect</title>
+  <meta name="description" content="JC Constantino - Solutions Architect specializing in scalable AWS cloud solutions, infrastructure design, and DevOps.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Animated Background -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">JC<span class="accent">.</span></a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#certifications">Certs</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-tag">&lt;solutions_architect /&gt;</p>
+      <h1 class="hero-title">JC Constantino</h1>
+      <p class="hero-subtitle">Solutions Architect | Building Scalable Cloud Solutions on AWS</p>
+      <p class="hero-intro">I design, build, and optimize cloud architectures focused on performance, security, and scalability.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+      <div class="hero-terminal">
+        <div class="terminal-header"><span></span><span></span><span></span></div>
+        <div class="terminal-body">
+          <span class="terminal-prompt">$</span>
+          <span id="typed-text"></span><span class="cursor">|</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About <span class="accent">Me</span></h2>
+      <div class="about-grid">
+        <div class="about-image">
+          <div class="image-frame">
+            <img src="Professional Pictures.jpg" alt="JC Constantino" loading="lazy">
+          </div>
+        </div>
+        <div class="about-text">
+          <p>I'm a <strong>Solutions Architect</strong> with deep expertise in <strong>Amazon Web Services (AWS)</strong>, specializing in designing and implementing cloud-native architectures that are secure, scalable, and cost-efficient.</p>
+          <p>My focus spans <strong>cloud infrastructure design</strong>, <strong>DevOps automation</strong>, and <strong>networking</strong> — helping organizations modernize their technology stack and accelerate delivery.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-icon">☁️</span>
+              <span class="stat-label">Cloud Architecture</span>
+            </div>
+            <div class="stat">
+              <span class="stat-icon">⚙️</span>
+              <span class="stat-label">DevOps & CI/CD</span>
+            </div>
+            <div class="stat">
+              <span class="stat-icon">🔒</span>
+              <span class="stat-label">Security & Compliance</span>
+            </div>
+            <div class="stat">
+              <span class="stat-icon">📐</span>
+              <span class="stat-label">Infrastructure as Code</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title">Skills & <span class="accent">Stack</span></h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">☁️</div>
+          <h3>AWS Services</h3>
+          <div class="skill-tags">
+            <span>EC2</span><span>S3</span><span>RDS</span><span>Lambda</span><span>VPC</span><span>ECS</span><span>Bedrock/ML/Kiro</span>
+            <span>CloudFront</span><span>Route 53</span><span>ECS</span><span>IAM</span><span>CloudFormation</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🔧</div>
+          <h3>DevOps Tools</h3>
+          <div class="skill-tags">
+            <span>Linux</span><span>Terraform</span><span>Docker</span><span>Kubernetes</span><span>Jenkins</span>
+            <span>GitHub Actions</span><span>CI/CD</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🌐</div>
+          <h3>Networking</h3>
+          <div class="skill-tags">
+            <span>VPC Design</span><span>VPN</span><span>Direct Connect</span><span>Load Balancing</span>
+            <span>DNS</span><span>CDN</span><span>Transit Gateway</span><span>Site2Site VPN</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🛡️</div>
+          <h3>Security</h3>
+          <div class="skill-tags">
+            <span>IAM Policies</span><span>WAF</span><span>GuardDuty</span><span>KMS</span>
+            <span>Security Hub</span><span>Compliance</span><span>Zero Trust</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🤝</div>
+          <h3>Customer Facing</h3>
+          <div class="skill-tags">
+            <span>Stakeholder Management</span><span>Requirements Gathering</span><span>Technical Consulting</span>
+            <span>Solution Presentations</span><span>Client Workshops</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">💬</div>
+          <h3>Communication</h3>
+          <div class="skill-tags">
+            <span>Technical Writing</span><span>Architecture Reviews</span><span>Cross-Team Collaboration</span>
+            <span>Executive Briefings</span><span>Documentation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-number">01</div>
+          <h3>Multi-Region HA Platform</h3>
+          <p>Designed a multi-region, highly available architecture on AWS with automated failover, achieving 99.99% uptime.</p>
+          <div class="project-stack"><span>EC2</span><span>RDS</span><span>Route 53</span><span>CloudFront</span></div>
+          <a href="#" class="project-link">View Details →</a>
+        </div>
+        <div class="project-card">
+          <div class="project-number">02</div>
+          <h3>Chatbot using Amazon Bedrock</h3>
+          <p>A contextual chatbot that answers user questions by retrieving relevant information from your own data sources and generating grounded, cited responses using generative AI. Built entirely on AWS managed services — no infrastructure to manage.</p>
+          <div class="project-stack"><span>Lambda</span><span>API Gateway</span><span>Vector Store</span><span>Amazon Titan Nova Pro</span></div>
+          <a href="https://github.com/jcconstantino/aws_chatbot_bedrock/blob/main/README.md" class="project-link">View Details →</a>
+        </div>
+        <div class="project-card">
+          <div class="project-number">03</div>
+          <h3>Zero-Trust Network Architecture</h3>
+          <p>Implemented a zero-trust security model across a multi-account AWS organization with centralized governance.</p>
+          <div class="project-stack"><span>AWS Organizations</span><span>IAM</span><span>VPC</span><span>GuardDuty</span></div>
+          <a href="#" class="project-link">View Details →</a>
+        </div>
+        <div class="project-card">
+          <div class="project-number">04</div>
+          <h3>Container Orchestration Platform</h3>
+          <p>Migrated monolithic applications to containerized microservices with automated scaling and blue-green deployments.</p>
+          <div class="project-stack"><span>ECS</span><span>Fargate</span><span>ALB</span><span>ECR</span></div>
+          <a href="#" class="project-link">View Details →</a>
+        </div>
+        <div class="project-card">
+          <div class="project-number">05</div>
+          <h3>Cloud Cost Optimization</h3>
+          <p>Reduced AWS monthly spend by 45% through right-sizing, reserved instances, and automated resource management.</p>
+          <div class="project-stack"><span>Cost Explorer</span><span>Trusted Advisor</span><span>Lambda</span><span>CloudWatch</span></div>
+          <a href="#" class="project-link">View Details →</a>
+        </div>
+        <div class="project-card">
+          <div class="project-number">06</div>
+          <h3>Infrastructure as Code Framework</h3>
+          <p>Created reusable Terraform modules and CI/CD pipelines for consistent, repeatable infrastructure deployments.</p>
+          <div class="project-stack"><span>Terraform</span><span>GitHub Actions</span><span>CloudFormation</span><span>CodePipeline</span></div>
+          <a href="" class="project-link">View Details →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 class="section-title">Work <span class="accent">Experience</span></h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Solutions Architect Team Lead</h3>
+              <span class="timeline-date">May 2022 – Present</span>
+            </div>
+            <p class="timeline-company">Sagesoft Solutions, Inc. · Full-time</p>
+            <p class="timeline-location">San Juan, Metro Manila</p>
+            <ul class="timeline-details">
+              <li>Lead cloud infrastructure design and deployment on AWS including EC2, VPC, Route 53, RDS, S3, EBS, SNS, and Security Groups</li>
+              <li>Manage AWS user accounts, IAM policies, and security configurations across environments</li>
+              <li>Implement Infrastructure as Code automation using AWS CloudFormation and Bash scripting</li>
+              <li>Administer Apache Tomcat and Apache HTTP servers — installation, configuration, deployment, and maintenance</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Information Technology Instructor</h3>
+              <span class="timeline-date">Feb 2022 – Jun 2022</span>
+            </div>
+            <p class="timeline-company">STI College · Part-time</p>
+            <p class="timeline-location">Taguig, NCR, Philippines</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>IT / Admin Specialist</h3>
+              <span class="timeline-date">Aug 2021 – May 2022</span>
+            </div>
+            <p class="timeline-company">Golden Sphere · Full-time</p>
+            <p class="timeline-location">Makati, NCR, Philippines</p>
+            <ul class="timeline-details">
+              <li>Installed and maintained software and hardware components</li>
+              <li>Provided technical support and troubleshooting for company staff</li>
+              <li>Managed website maintenance, records, and database updates</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Private Tutor</h3>
+              <span class="timeline-date">Feb 2022 – Apr 2022</span>
+            </div>
+            <p class="timeline-company">Freelance</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Software Engineer</h3>
+              <span class="timeline-date">Mar 2021 – Jun 2021</span>
+            </div>
+            <p class="timeline-company">Innoxito · Apprenticeship</p>
+            <p class="timeline-location">Las Piñas, NCR, Philippines</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <h2 class="section-title">Certifications & <span class="accent">Badges</span></h2>
+      <p class="certs-note">Verify on <a href="https://www.credly.com/users/john-chris-constantino" target="_blank" rel="noopener">Credly ↗</a></p>
+      <div class="certs-grid">
+        <div class="cert-card">
+          <img class="cert-badge" src="https://images.credly.com/size/340x340/images/2d84e428-9078-49b6-a804-13c15383d0de/image.png" alt="AWS Solutions Architect Professional Badge">
+          <h3>AWS Solutions Architect – Professional</h3>
+          <p>Amazon Web Services</p>
+        </div>
+        <div class="cert-card">
+          <img class="cert-badge" src="https://images.credly.com/size/340x340/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png" alt="AWS Solutions Architect Associate Badge">
+          <h3>AWS Solutions Architect – Associate</h3>
+          <p>Amazon Web Services</p>
+        </div>
+        <div class="cert-card">
+          <img class="cert-badge" src="https://images.credly.com/size/340x340/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png" alt="AWS Cloud Practitioner Badge">
+          <h3>AWS Cloud Practitioner</h3>
+          <p>Amazon Web Services</p>
+        </div>
+      
+        <div class="cert-card">
+          <img class="cert-badge" src="cloudquest.png" alt="AWS Cloud Quest Generative AI Badge">
+          <h3>AWS Cloud Quest: Generative AI</h3>
+          <p>Training Badge</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+      <div class="contact-content">
+        <p class="contact-text">Have a project in mind or want to discuss cloud architecture? Let's connect.</p>
+        <a href="mailto:constantinojohnchris@gmail.com" class="btn btn-primary btn-lg">Say Hello →</a>
+        <p class="contact-phone">📱 09567461678</p>
+        <div class="contact-links">
+          <a href="https://www.linkedin.com/in/john-chris-constantino-086a881ab/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://github.com/jcconstantino" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2026 JC Constantino. Built with ☁️ and code.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
