@@ -21,6 +21,7 @@
     grid-template-columns: 2.2in 1fr;
     overflow: hidden;
   }
+  .page + .page { page-break-before: always; }
   .sidebar {
     background: #0f1b2d;
     color: #e0e0e0;
@@ -33,6 +34,7 @@
     color: #FF9900; border-bottom: 1px solid rgba(255,153,0,0.3);
     padding-bottom: 3px; margin-bottom: 6px; margin-top: 14px;
   }
+  .sidebar h2:first-child { margin-top: 0; }
   .sidebar p, .sidebar li { font-size: 7.5pt; line-height: 1.4; color: #ccc; }
   .sidebar ul { list-style: none; }
   .sidebar ul li { padding: 1px 0; }
@@ -67,6 +69,10 @@
     font-size: 8pt; color: #444; margin-bottom: 1px; line-height: 1.4;
   }
   .exp-entry li::before { content: '▸'; position: absolute; left: 0; color: #FF9900; }
+  .page-label {
+    font-size: 6.5pt; color: #666; text-align: center;
+    padding: 6px 0; border-top: 1px solid #eee; margin-top: auto;
+  }
   @media print {
     body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
     .page { height: 100vh; }
@@ -74,6 +80,8 @@
 </style>
 </head>
 <body>
+
+<!-- ==================== PAGE 1 ==================== -->
 <div class="page">
   <div class="sidebar">
     <h1>JC<br>Constantino</h1>
@@ -188,5 +196,59 @@
     </div>
   </div>
 </div>
+
+<!-- ==================== PAGE 2 ==================== -->
+<div class="page">
+  <div class="sidebar">
+    <h2>Education</h2>
+    <div class="cert-item">
+      <strong>BS Computer Science</strong>
+      <span>University of the City of Muntinlupa</span>
+      <span>2017 – 2021</span>
+    </div>
+    <div class="cert-item">
+      <strong>AWS re/Start Program</strong>
+      <span>Edukasyon.ph</span>
+      <span>Apr – Jul 2022</span>
+    </div>
+
+    <h2>Training</h2>
+    <div class="cert-item">
+      <strong>Cisco: Ironlink</strong>
+      <span>5-Day Intensive Training</span>
+      <span>2025</span>
+    </div>
+    <div class="cert-item">
+      <strong>CloudSchool in Apper</strong>
+      <span>DevOps</span>
+      <span>2025</span>
+    </div>
+  </div>
+
+  <div class="main">
+    <h2>Education</h2>
+    <div class="exp-entry">
+      <div class="exp-header"><h3>Bachelor's Degree, Computer Science</h3><span class="date">2017 – 2021</span></div>
+      <div class="exp-company">University of the City of Muntinlupa</div>
+    </div>
+    <div class="exp-entry">
+      <div class="exp-header"><h3>AWS re/Start Program Learner</h3><span class="date">Apr – Jul 2022</span></div>
+      <div class="exp-company">Edukasyon.ph</div>
+      <ul><li>Completed full-time, classroom-based skills development and training program on IT fundamentals, AWS Cloud, and professional skills</li></ul>
+    </div>
+
+    <h2>Training</h2>
+    <div class="exp-entry">
+      <div class="exp-header"><h3>Cisco: Ironlink</h3><span class="date">2025</span></div>
+      <ul><li>5-day intensive training on networking fundamentals, routing & switching, and network security</li></ul>
+    </div>
+    <div class="exp-entry">
+      <div class="exp-header"><h3>CloudSchool in Apper</h3><span class="date">2025</span></div>
+      <ul><li>DevOps training covering CI/CD pipelines, containerization, and infrastructure automation</li></ul>
+    </div>
+
+  </div>
+</div>
+
 </body>
 </html>

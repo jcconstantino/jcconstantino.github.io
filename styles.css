@@ -676,6 +676,102 @@ body {
   transform: translateY(-2px);
 }
 
+/* === Education & Training === */
+.subsection-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 48px;
+  margin-bottom: 24px;
+  color: var(--accent);
+}
+
+.training-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* === Seminars === */
+.seminars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.seminar-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.seminar-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(255, 153, 0, 0.08);
+}
+
+.seminar-image {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.seminar-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.seminar-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0f1b2d, #1a2a40);
+}
+
+.seminar-placeholder span {
+  font-size: 4rem;
+}
+
+.seminar-card:hover .seminar-image img {
+  transform: scale(1.05);
+}
+
+.seminar-info {
+  padding: 20px;
+}
+
+.seminar-info h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.seminar-org {
+  font-size: 0.88rem;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.seminar-location {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.seminar-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
 /* === Footer === */
 footer {
   position: relative;
